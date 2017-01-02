@@ -1,0 +1,28 @@
+{
+	"name": "togos/multi-exception",
+	"description": "An exception class for wrapping multiple other exceptions",
+	"license": "MIT",
+
+
+	"require": {
+		"php": ">=5.2"
+	},
+	"autoload": {
+		"psr-0": {
+			"TOGoS_MultiException": "lib/"
+		}
+	},
+
+
+	"require-dev": {
+		"phpunit/phpunit": "~3.7"
+	},
+	"autoload-dev": {
+		"psr-0": {
+			"TOGoS_MultiExceptionTest": "test/"
+		}
+	},
+	"scripts": {
+		"test": "vendor/bin/phpunit --bootstrap vendor/autoload.php test/"
+	}
+}
